@@ -1,0 +1,169 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: arial;
+    font-style: normal;
+}
+body{
+     font-size: medium;
+}
+header, footer
+{
+    background-image: url(pic/background.jpg);
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+h1{
+    color: #ffa500;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-style: normal;
+}
+h1 div{
+    text-transform: capitalize;
+    font-family: monospace;
+    margin-left: 12px;
+    color: #f3a410dc;
+}
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+  .navbar li {
+    position: relative;
+  }
+  .navbar li a{
+      color: #ffa500;
+      text-transform: uppercase;
+      text-decoration: none;
+      float: right;
+      position: static;
+  }
+  .navbar > ul > li {
+    white-space: nowrap;
+    padding: 20px 0 20px 40px;
+  }
+  .navbar a i, .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  .navbar > ul > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    width: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+  }
+   .navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+    visibility: visible;
+    width: 80%;
+  }
+  .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+    color: #ffff;
+  }
+
+  
+  /**
+  * Mobile Navigation 
+  */
+  .mobile-nav-toggle {
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+  }
+  
+  @media (max-width: 991px) {
+    .mobile-nav-toggle {
+      display: block;
+    }
+  
+    .navbar ul {
+      display: none;
+    }
+  }
+  .navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #ffa7ff00;
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+  }
+  .navbar-mobile > ul > li {
+    padding: 0;
+  }
+  .navbar-mobile a:hover:before, .navbar-mobile li:hover > a:before, .navbar-mobile .active:before {
+    visibility: hidden;
+  }
+  .navbar-mobile a, .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #fff;
+  }
+  .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+    color: #ffa500;
+  }
+  .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+    margin: 15px;
+  }
+  /*section tags css*/
+  section{
+      display: flex;
+  }
+  #home{
+    padding-top: 12px;
+    background-image: url(pic/bukunmi.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+#home a{
+    align-items: center;
+    text-decoration: none;
+    color: orange;
+    display: contents;
+}
+i{
+    color: orangered;
+}
+h3, h5{
+    text-transform: uppercase;
+    border-bottom: double;
+}
+footer{
+    color: #ffa500;
+}
+
